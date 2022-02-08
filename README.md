@@ -68,5 +68,5 @@ We have also supplied a Dockerfile that can be used to create a Docker image to 
 docker build -t function_prediction_docker_img .
 
 To run the docker use the command:
-docker run --volume EXACT_PATH_TO_DIRECTORY_WITH_INPUTS_AND_OUTPUTS:/src/input function_prediction_docker_image ./input/ANTISMASH_FILENAME ./input/RGI_FILENAME --output ./input/OUTPUT_FOLDERNAME
+docker run --volume EXACT_PATH_TO_DIRECTORY_WITH_INPUTS_AND_OUTPUTS:/src/input function_prediction_docker_img ./input/ANTISMASH_FILENAME ./input/RGI_FILENAME --output ./input/OUTPUT_FOLDERNAME
 additional arguments from the command line tool can also be added to this command

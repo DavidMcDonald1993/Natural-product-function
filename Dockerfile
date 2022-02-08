@@ -14,9 +14,9 @@ ENV PATH /src/ncbi-blast-2.11.0+/bin:$PATH
 
 
 #copy required code and database files
-COPY cluster_function_prediction.py .
-COPY *.py .
-COPY cluster_list.csv .
+COPY cluster_function_prediction.py ./
+COPY *.py ./
+COPY cluster_list.csv ./
 RUN mkdir feature_matrices/
 RUN mkdir SSN/
 RUN mkdir /src/temp_file/
